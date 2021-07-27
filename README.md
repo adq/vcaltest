@@ -1,13 +1,13 @@
 
 Run the app in three consoles as follows:
 
-cd test-orc
+cd sample-orc
 npm run start
 
-cd test-app
+cd sample-app
 npm run start
 
-cd test-lib
+cd sample-lib
 npm run start
 
 
