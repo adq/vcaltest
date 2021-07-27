@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Sample App</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="importmap-type" content="systemjs-importmap">
+    <meta name="apimap-type" content="tvs-apimap">
+
+    <script type="systemjs-importmap" src="/importmap.json"></script>
+
+    <script src="https://unpkg.com/systemjs/dist/system.js"></script>
+    <script src="https://unpkg.com/systemjs/dist/extras/amd.min.js"></script>
+    <script src="https://unpkg.com/systemjs/dist/extras/named-exports.min.js"></script>
+  </head>
+
+  <body>
+    <script>
+      System.import('@test/sample-orc');
+    </script>
+
+
+    <template id="mfe-applications">
+      <single-spa-router>
+        <div class="applications">
+          <route path="/">
+            <application name="@test/sample-app"></application>
+          </route>
+        </div>
+      </single-spa-router>
+    </template>
+  </body>
+</html>
