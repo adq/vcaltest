@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "vue-cli-service build",
-    "start": "vue-cli-service serve --port 10001",
+    "start": "vue-cli-service serve --port 10001"
   },
   "dependencies": {
     "single-spa-vue": "^1.9.0",
